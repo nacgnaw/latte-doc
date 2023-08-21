@@ -21,10 +21,10 @@ plugins {
 }
 
 ext {
-  swaggerUiVersion = '3.26.2'
+  swaggerUiVersion = '5.3.2'
   swaggerUiDist = "build/libs/swagger-ui-dist.zip"
   swaggerUiExplodedDir = "swagger-ui-${swaggerUiVersion}/dist/"
-  downloadUrl = "https://github.com/swagger-api/swagger-ui/archive/v${swaggerUiVersion}.zip"
+  downloadUrl = "https://github.com/swagger-api/swagger-ui/archive/refs/tags/v${swaggerUiVersion}.zip"
   destinationZip = "$buildDir/zip/${swaggerUiVersion}.zip"
   replacePath = 'window.location.origin + "\\${pageContext.request.contextPath}/api-docs"'
   artifactRepoBase = 'http://oss.jfrog.org/artifactory'
